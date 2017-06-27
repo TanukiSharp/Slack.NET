@@ -1,0 +1,9 @@
+.vs/
+SlackDotNet.TestApp/bin/
+SlackDotNet.TestApp/obj/
+SlackDotNet/bin/
+SlackDotNet/obj/
+/SlackDotNet/GitCommitInfo.cs
+
+/SlackDotNet.UnitTests/bin/
+/SlackDotNet.UnitTests/obj/

@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Version>0.0.1</Version>
+    <Authors>Sebastien ROBERT</Authors>
+    <Description>Low level API for the slack.com online service.</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/TanukiSharp/Slack.NET/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/TanukiSharp/Slack.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TanukiSharp/Slack.NET</RepositoryUrl>
+    <PackageTags>slack api web rtm</PackageTags>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD1_3</DefineConstants>
+    <DocumentationFile>bin\Debug\netstandard1.3\SlackDotNet.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>RELEASE;NETSTANDARD1_3</DefineConstants>
+    <DocumentationFile>bin\Release\netstandard1.3\SlackDotNet.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="1.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="System.Net.WebSockets.Client" Version="4.3.1" />
+    <PackageReference Include="System.Threading.Thread" Version="4.3.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.4.0-preview2-25405-01" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Bitcraft.Tools.GitCommitInfo" Version="1.1.0" />
+  </ItemGroup>
+
+  <Target Name="GitCommitInfoTarget" AfterTargets="Restore" BeforeTargets="BeforeBuild">
+    <Exec Command="dotnet git-commit-info --namespace SlackDotNet" />
+    <ItemGroup>
+      <Compile Include="**/*$(DefaultLanguageSourceExtension)" Exclude="$(DefaultItemExcludes);$(DefaultExcludesInProjectFolder);$(BaseIntermediateOutputPath)**;$(BaseOutputPath)**;@(Compile)" />
+    </ItemGroup>
+  </Target>
+
+</Project>

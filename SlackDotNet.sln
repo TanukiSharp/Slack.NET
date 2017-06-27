@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlackDotNet.TestApp", "SlackDotNet.TestApp\SlackDotNet.TestApp.csproj", "{92E860E9-52AE-4351-A352-A2A9B4C3C10E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlackDotNet", "SlackDotNet\SlackDotNet.csproj", "{1C673396-E4A1-41E2-85E2-FC082798FB6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlackDotNet.UnitTests", "SlackDotNet.UnitTests\SlackDotNet.UnitTests.csproj", "{A11E1FEF-4EF2-4B5B-8355-EB57DAA5D73B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92E860E9-52AE-4351-A352-A2A9B4C3C10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E860E9-52AE-4351-A352-A2A9B4C3C10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E860E9-52AE-4351-A352-A2A9B4C3C10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E860E9-52AE-4351-A352-A2A9B4C3C10E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C673396-E4A1-41E2-85E2-FC082798FB6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C673396-E4A1-41E2-85E2-FC082798FB6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C673396-E4A1-41E2-85E2-FC082798FB6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C673396-E4A1-41E2-85E2-FC082798FB6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A11E1FEF-4EF2-4B5B-8355-EB57DAA5D73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11E1FEF-4EF2-4B5B-8355-EB57DAA5D73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11E1FEF-4EF2-4B5B-8355-EB57DAA5D73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11E1FEF-4EF2-4B5B-8355-EB57DAA5D73B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
